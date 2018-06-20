@@ -32,7 +32,7 @@ O primeiro passo é redirecionar o usuário para o TagPlus, para que assim ele p
 // Mude o diretório de acordo com sua estrutura de pasta
 require_once __DIR__ . '/vendor/autoload.php'; 
 
-use Tagplus\Client;
+use TagComercio\Client;
 
 $config = [
     'client_id' => 'xxx',
@@ -65,7 +65,7 @@ Nesse página de retorno (*callback*) você deve ter os seguintes trechos de có
 // Mude o diretório de acordo com sua estrutura de pasta
 require_once __DIR__ . '/vendor/autoload.php'; 
 
-use Tagplus\Client;
+use TagComercio\Client;
 use kamermans\OAuth2\Persistence\FileTokenPersistence;
 
 // Mude a localização da pasta conforme necessário
@@ -100,7 +100,7 @@ Agora já está tudo pronto para utilizar a API:
 // Mude o diretório de acordo com sua estrutura de pasta
 require_once __DIR__ . '/vendor/autoload.php'; 
 
-use Tagplus\Client;
+use TagComercio\Client;
 use kamermans\OAuth2\Persistence\FileTokenPersistence;
 
 $config = [
