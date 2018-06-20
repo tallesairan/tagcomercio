@@ -1,4 +1,4 @@
-# SDK PHP TagPlus
+# SDK PHP TagComercio
 
 A SDK facilita a integração com a nossa API do ERP, principalmente nas etapas de autenticação.
 
@@ -17,9 +17,9 @@ composer require tagplus/sdk-api-php
 
 ## Como usar
 
-**IMPORTANTE:** Para prosseguir você já precisa ter se registrado no portal da API e ter disponível seu `client_id`, `client_secret` e `redirect_uri`. Caso ainda não tenha se registrado acesse [aqui](https://apidoc.tagplus.com.br/) e clique em Cadastrar.
+**IMPORTANTE:** Para prosseguir você já precisa ter se registrado no portal da API e ter disponível seu `client_id`, `client_secret` e `redirect_uri`. Caso ainda não tenha se registrado acesse [aqui](http://developers.tagcomercio.net/) e clique em Cadastrar.
 
-A API utiliza o OAuth2 para autenticação, vamos mostrar um exemplo de como você deve utilizar a SDK para efetuar a autenticação. Confira nossa documentação de API [aqui](https://apidoc.tagplus.com.br/doc/).
+A API utiliza o OAuth2 para autenticação, vamos mostrar um exemplo de como você deve utilizar a SDK para efetuar a autenticação. Confira nossa documentação de API [aqui](http://developers.tagcomercio.net/doc).
 
 ### 1. Autorização do usuário
 
@@ -47,7 +47,7 @@ $authUrl = Client::getAuthorizationUrl(
 );
 ?>
 
-<a href="<?=$authUrl?>">Conectar ao TagPlus</a>
+<a href="<?=$authUrl?>">Conectar ao TagComercio</a>
 ```
 
 Ao clicar no link o usuário poderá autorizar (ou não) a sua aplicação a acessar os recursos solicitados (scope).
@@ -128,13 +128,7 @@ echo 'Nome do usuário: ' $me->nome;
 
 ```
 
-Esse foi apenas um exemplo de como usar a API do ERP TagPlus.
-Para mais detalhes de quais recursos estão disponíveis acesse nossa [referência](https://apidoc.tagplus.com.br/doc).
+Esse foi apenas um exemplo de como usar a API do ERP TagComercio.
+Para mais detalhes de quais recursos estão disponíveis acesse nossa [referência](http://developers.tagcomercio.net/doc).
 
-## Próximos passos
-
-- [ ] Explicar como armazenar os tokens no BD (ex.: MySQL);
-- [ ] Explicar como usar a SDK junto com uma framework (ex.: Laravel, CodeIgniter, Symfony, etc...);
-- [ ] Recuperar todas as páginas (quando houver) automaticamente;
-- [ ] Já retornar a instância do Objeto, sem precisar chamar a função json_decode;
-- [ ] Ter métodos para todos os recursos, ao invés de passar a URL como parâmetro (ex.: `$api->getClientes()`).
+ 
