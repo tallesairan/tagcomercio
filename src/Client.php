@@ -1,6 +1,6 @@
 <?php
 
-namespace Tagplus;
+namespace TagComercio;
 
 use GuzzleHttp;
 use kamermans\OAuth2\Persistence\NullTokenPersistence;
@@ -11,7 +11,7 @@ use kamermans\OAuth2\GrantType\AuthorizationCode;
 
 class Client extends GuzzleHttp\Client
 {
-    const BASE_URL = 'https://api.tagplus.com.br';
+    const BASE_URL = 'https://api.tagcomercio.net';
 
     private $credentials;
     private $config;
@@ -26,10 +26,10 @@ class Client extends GuzzleHttp\Client
     ) {
         $url = sprintf('%s?response_type=code&client_id=%s&scope=%s',
             // Authorization URL
-            'https://apidoc.tagplus.com.br/authorize',
+            'https://developers.tagcomercio.net/authorize',
             // Parameters (query string)
             $client_id,
-            implode($scope, ' ')
+            implode($scope, '+')
         );
 
         // redirect_uri is optional
@@ -55,7 +55,8 @@ class Client extends GuzzleHttp\Client
             $tokenPersistence = new NullTokenPersistence;
         }
 
-        // grant type used to retrieve the access token
+
+	    // grant type used to retrieve the access token
         $grant = new AuthorizationCode(
             $authClient, 
             $config + ['code' => $_GET['code']]
