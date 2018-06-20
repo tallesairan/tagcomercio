@@ -2,6 +2,7 @@
 
 A SDK facilita a integração com a nossa API do ERP, principalmente nas etapas de autenticação.
 
+Fork do cliente original [TagPlus](https://github.com/TagPlus/sdk-api-php) 
 ## Requisitos
 
 * PHP >= 5.4
@@ -130,5 +131,7 @@ echo 'Nome do usuário: ' $me->nome;
 
 Esse foi apenas um exemplo de como usar a API do ERP TagComercio.
 Para mais detalhes de quais recursos estão disponíveis acesse nossa [referência](http://developers.tagcomercio.net/doc).
+
+todos direitos reservados a TAGPLUS,TAG SOFTWARE e TagComercio
 
  
