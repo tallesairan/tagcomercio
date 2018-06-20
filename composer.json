@@ -1,6 +1,6 @@
 {
-    "name": "tagplus/sdk-api-php",
-    "description": "Um cliente PHP para consumir a API do ERP TagPlus.",
+    "name": "tallesairan/sdk-api-php",
+    "description": "Um cliente PHP para consumir a API do ERP TagComercio.",
     "require": {
         "php": ">=5.4",
         "guzzlehttp/guzzle": "^5",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tagplus\\": "src/"
+            "TagComercio\\": "src/"
         }
     },
     "require-dev": {
