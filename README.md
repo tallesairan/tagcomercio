@@ -13,7 +13,7 @@ Fork do cliente original [TagPlus](https://github.com/TagPlus/sdk-api-php)
 Vamos instalar a SDK via Composer:
 
 ```bash
-composer require tagplus/sdk-api-php
+composer require tallesairan/tagcomercio
 ```
 
 ## Como usar
