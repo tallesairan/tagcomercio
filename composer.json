@@ -1,7 +1,9 @@
 {
     "name": "tallesairan/tagcomercio",
     "description": "Um cliente PHP para consumir a API do ERP TagComercio.",
-    "license": "MIT",
+	"homepage": "http://developers.tagcomercio.net/",
+	"keywords": ["Tagcomercio", "api","Tagplus","ERP","oauth2","guzzle"],
+	"license": "MIT",
     "require": {
         "php": ">=5.4",
         "guzzlehttp/guzzle": "^5",
